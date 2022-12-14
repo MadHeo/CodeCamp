@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="../cyworld/style/game.css">
+    <script src="./rotoGame.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__header">
+            <div class="header__title">
+                <div class="title">GAME</div>
+                <div class="subtitle">TODAY CHOICE</div>
+            </div>
+            <div class="divideLine"></div>
+        </div>
+        <div class="game__container">
+            <img src="./image/word.png">
+            <div class="game__title">끝말잇기</div>
+            <div class="game__subtitle">제시어 : <span id="word">코드캠프</span></div>
+            <div class="word__text">
+                <input class="textbox" id="myword" placeholder="단어를 입력하세요">
+                <button class="search">입력</button>
+            </div>
+            <div id="result" class="word__result">결과!</div>
+        </div>
+        <div class="game__container">
+            <img src="./image/lotto.png">
+            <div class="game__title">LOTTO</div>
+            <div class="game__subtitle">버튼을 누르세요</div>
+            <div class="lotto__number">
+                <div class="number"><span id="num1">3</span></div>
+                <div class="number"><span id="num2">5</span></div>
+                <div class="number"><span id="num3">10</span></div>
+                <div class="number"><span id="num4">24</span></div>
+                <div class="number"><span id="num5">30</span></div>
+                <div class="number"><span id="num6">34</span></div>
+            </div>
+            <button onclick="rotoClick()" class="press__button"><span id="rotoButton">Button</span></button>
+        </div>
+    </div>    
+</body>
+</html>
