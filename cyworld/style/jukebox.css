@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title{
+    color : #55B2E4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.subtitle{
+    font-size: 8px;
+    padding-left: 5px;
+}
+
+.divideline{
+    width: 100%;
+    border-top: solid gray;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.album__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.album__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-thumbnail{
+    width: 120px;
+    height: 120px;
+}
+
+.album__song{
+    font-size: 11px;
+    font-weight: 700;
+    color: #0F465E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.album__singer{
+    font-size: 10px;
+    font-weight: 700;
+    color: #999999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrapper__body{
+    width: 100%;
+    height: 100%;
+    margin-top: 42px; 
+}
+
+.albumTable{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.albumTable th {
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+    background-color: #eeeeee;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px dashed gray;
+}
+
+.albumTable td {
+    height: 20px;
+    font-size: 10px;
+    color: #0f465e;
+    border-bottom: 1px dashed gray;
+}
+
+.album-table-checkbox{
+    width: 5%;
+    text-align: center;
+}
+
+.album-table-number{
+    width: 10%;
+    text-align: center;
+}
+
+.album-table-song{
+    width: 45%;
+    text-align: left;
+}
+
+.album-table-artist{
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* //div로 구현한 코드 */
+
+/* .albumTable{
+    width: 100%;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+}
+
+.column {
+    border-bottom: 1px dotted black;
+}
+
+.tableTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eeeeee;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+#title__number{
+    font-size: 10px;
+    font-weight: 700;
+    color: #999999;
+}
+
+.column1{
+    display: flex;
+    flex-direction: row;
+}
+
+.row1{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row2{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+}
+
+.row3{
+    width: 251px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    color: #0F465E;
+}
+
+.row4{
+    width: 90px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    color: #0F465E;
+} */
