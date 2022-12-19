@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./final.css">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="main_border">
+        <div class="sub_border">
+            <h3 class="title">코드캠프 회원가입</h3>
+            <div class="input_info">
+                <input id="email_input" class="email_input" type="text" placeholder="이메일을 입력해 주세요" onfocus="this.placeholder=''" onblur="this.placeholder='이메일을 입력해 주세요'">
+                <div class="error" id="email_error">이메일을 입력해주세요</div>
+                <input id="name_input" class="name_input" type="text" placeholder="이름을 입력해 주세요" onfocus="this.placeholder=''" onblur="this.placeholder='이름을 입력해 주세요'">
+                <div class="error" id="name_error">이름을 입력해주세요</div>
+                <input id="pw1_input" class="pw_input" type="text" placeholder="비밀번호를 입력해 주세요" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 입력해 주세요'">
+                <div class="error" id="pw1_error">비밀번호를 입력해주세요</div>
+                <input id="pw2_input" class="pwcheck_input" type="text" placeholder="비밀번호를 다시 입력해 주세요" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호를 다시 입력해 주세요'">
+                <div class="error" id="pw2_error">비밀번호를 입력해주세요</div>
+            </div>
+            <div class="input_phone_number">
+                <input id="p1" class="phone_number" type="text" placeholder="000" onfocus="this.placeholder=''" onfocus="this.placeholder=''" onblur="this.placeholder='000'" oninput="changeFocus1()" maxlength="3">-
+                <input id="p2" class="phone_number" type="text" placeholder="0000" onfocus="this.placeholder=''" onfocus="this.placeholder=''" onblur="this.placeholder='0000'" oninput="changeFocus2()" maxlength="4">-
+                <input id="p3" class="phone_number" type="text" placeholder="0000" onfocus="this.placeholder=''" onfocus="this.placeholder=''" onblur="this.placeholder='0000'" oninput="changeFocus3()" maxlength="4">
+            </div>
+            <div class="input_timer">
+                <div class="send_number">
+                    <span id="number">000000</span>
+                    <button id="btn" onclick="auth()" disabled>인증번호 전송</button>
+                </div>
+                <div class="accept_number">
+                    <div id="time">3:00</div>
+                    <button id="btn2" onclick="confirm()" disabled>인증확인</button>
+                </div>
+            </div>
+            <div class="select_city">
+                <select id="select_input" class="select_box">
+                    <option disabled="true" selected="true">지역을 선택하세요</option>
+                    <option value="">서울</option>
+                    <option value="">경기</option>
+                    <option value="">인천</option>
+                </select>
+            </div>
+            <div class="error" id="select_error">지역을 선택해주세요</div>
+            <div class="check">
+                <input id="check1_input" class="check_woman" type="radio" name="gender">여성
+                <input id="check2_input" class="check_man" type="radio" name="gender">남성
+            </div>
+            <div class="error" name="error" id="check_error">성별을 선택해주세요</div>
+            <div class="line"></div>
+            <div class="button_sign">
+                <button class="button_sign" id="button_signup" disabled onclick="OnSignupButton()">가입하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
